@@ -8,10 +8,9 @@ export default function Home() {
     description="Descripcion del Home"
     >
     <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+        <h1>Página de inicio de Blog</h1>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          Ejercicio de prueba - Blog de práctica
         </p>
       </section>
 

@@ -7,10 +7,14 @@ export default function index({data}) {
     <div >
       <Layout href="/blog/primer-post">
       <h1>INICIO</h1>
-      {
+      {                             // Se recorre el array de objetos y se muestra cada objeto
         data.map(({ id, title, body}) => (
        <div key={id}>
-          <h3>{id} - {title}</h3>
+          <h3>
+          <Link href={`/blog/${id}`}>  
+          <a>{id} - {title}</a>
+          </Link>
+          </h3>
           <p>{body}</p>
        </div>
         ))
@@ -20,7 +24,8 @@ export default function index({data}) {
   )
 }
 
-export async function getStaticProps(){
+// Obteninedo la data de la API
+export async function getStaticProps(){ // Metodo para la generacion de paginas estáticas
   try {
       const res = await fetch('https://jsonplaceholder.typicode.com/posts');
       const data = await res.json();

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import utilStyles from "../styles/utils.module.css";
 
-const name = "Julian"
+const name = "Blogs"
 
 export default function Layout({ children, title, description, home }) {
   return (
@@ -58,7 +58,7 @@ export default function Layout({ children, title, description, home }) {
           <a>Blog | </a>
         </Link>
         <Link href="/contact">
-          <a>Contacto |</a>
+          <a>Contacto | </a>
         </Link>
         <Link href="/about">
           <a>About</a>
