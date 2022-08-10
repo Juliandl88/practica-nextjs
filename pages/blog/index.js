@@ -6,7 +6,7 @@ export default function index({data}) {
   return (
     <div >
       <Layout href="/blog/primer-post">
-      <h1>INICIO - HOME</h1>
+      <h1>INICIO</h1>
       {                             // Se recorre el array de objetos y se muestra cada objeto
         data.map(({ id, title, body}) => (
        <div key={id}>
