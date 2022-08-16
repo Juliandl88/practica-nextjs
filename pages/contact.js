@@ -7,7 +7,7 @@ export default function contact() {
     title="Contact | NextJS"
     description="Descripción de la página about"
     >
-        <h1>CONTACTO</h1>
+        <h1>CONTACT</h1>
     </Layout>
   )
 }
